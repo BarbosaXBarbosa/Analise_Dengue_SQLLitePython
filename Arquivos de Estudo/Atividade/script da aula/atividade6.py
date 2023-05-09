@@ -7,7 +7,7 @@ cursor = conexao.cursor()
 cursor.lastrowbyid
 
 
-conexao = conector.connect("banco.db")
+conexao = conector.connect("../banco.db")
 cursor = conexao.cursor()
 
 comando = '''SELECT X, Y

@@ -1,6 +1,6 @@
 import sqlite3 as conector
 
-conexao = conector.connect("banco.db")
+conexao = conector.connect("../banco.db")
 cursor = conexao.cursor()
 
 comando = '''CREATE TABLE Cidade (
@@ -9,6 +9,6 @@ comando = '''CREATE TABLE Cidade (
                     estado TEXT
                     );'''
 
-conexao.commit(comando)
+cursor.execute(comando)
 cursor.close()
 conexao.close()

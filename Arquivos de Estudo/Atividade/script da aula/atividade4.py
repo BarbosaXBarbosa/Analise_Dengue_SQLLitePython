@@ -1,6 +1,6 @@
 import sqlite3 as conector
 
-conexao = conector.connect("banco.db")
+conexao = conector.connect("../banco.db")
 cursor = conexao.cursor()
 
 cmd_produto = '''INSERT INTO Produto VALUES (?, ?, ?, ?);'''

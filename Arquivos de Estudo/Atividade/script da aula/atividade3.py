@@ -1,5 +1,5 @@
 import sqlite3 as conector
-conexao = conector.connect("banco.db")
+conexao = conector.connect("../banco.db")
 cursor = conexao.cursor()
 
 comando1 = '''CREATE TABLE Produto (

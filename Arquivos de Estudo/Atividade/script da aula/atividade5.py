@@ -1,6 +1,6 @@
 import sqlite3 as conector
 
-conexao = conector.connect("banco.db")
+conexao = conector.connect("../banco.db")
 cursor = conexao.cursor()
 produtos = [
     {"cod": 1, "nome": "Carro A", "desc": "Quatro portas e motor 1.0", "preco": 10000},
