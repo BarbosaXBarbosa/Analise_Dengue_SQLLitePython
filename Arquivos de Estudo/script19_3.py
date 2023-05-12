@@ -14,7 +14,7 @@ cursor.execute(comando)
 registros = cursor.fetchall()
 for registro in registros:
     print(registro)
-    marca = Marca(*registro[6:])
+    marca = Marca(*registro[7:])
     veiculo = Veiculo(*registro[:5], marca)
     print("Placa:", veiculo.placa, ", Marca:", veiculo.marca.nome)
 

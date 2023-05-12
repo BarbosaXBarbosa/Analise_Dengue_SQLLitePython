@@ -9,7 +9,7 @@ produtos = [
     {"cod": 4, "nome": "Carro D", "desc": "Teto solar e motor 1.4", "preco": 40000}
 ]
 
-cmd_produto = ?
+cmd_produto = '''INSERT INTO Produto VALUES (:cod, :nome, :desc, :preco);'''
 for produto in produtos:
     cursor.execute(cmd_produto, produto)
 
